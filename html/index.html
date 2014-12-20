@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en-US">
+	
+<head>
+	<meta charset="UTF-8" />
+	<title>Peter Elam's Portfolio</title>
+	<link rel="stylesheet" href="styles/reset.css" media="screen" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/style.css" media="screen" />
+	<script src="scripts/Chart.js"></script>
+	<script src="scripts/jquery-1.11.1.min.js"></script>
+	<script src="scripts/jQueryRotateCompressed.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>Peter Elam</h1>
+		<span>Designer</span>  <span>•</span>  <span>Developer</span>  <span>•</span>  <span>Educational</span> <span>Technologist</span>
+		<h4>elampj@gmail.com</h4>
+	</header>
+
+	<section id="about-me">
+		<h2>ABOUT ME</h2>
+		<!-- <div class="color-divider"></div> -->
+		<div id="chart-div">
+			<div class="chart-holder">
+				<canvas id="chart-1" height="300"></canvas>
+			</div>
+			<div class="chart-holder">
+				<canvas id="chart-2" height="300"></canvas>
+			</div>
+		<!-- 	<div class="chart-holder">
+				<canvas id="chart-3" height="300px"></canvas>
+			</div>
+			<div class="chart-holder2">
+				<canvas id="chart-4" height="300px"></canvas>
+			</div> -->
+			<div class="clearfix"></div>
+		</div>
+	</section>
+
+	<section id="my-work">
+		<h2>MY WORK</h2>
+		<!-- <div class="color-divider"></div> -->
+	
+		
+		<!-- <a class="see-more" href="#" onclick="return false;">See More</a> -->
+		<div class="portfolio-item-holder">
+			<div class="portfolio-item shown" onclick="return false;" back>
+				<img class="back-img" src="images/dmi_lab.jpg" alt="dmi-banner"/>
+				<div class="play-holder">
+					<img class="white-btn" src="images/white_play_btn.svg" alt="white play button"/>
+					<p>Learn More</p>
+				</div>
+			</div>
+			<div class="portfolio-item hidden" onclick="return false;">
+				<div class="videoWrapper" onclick="return false;">
+				<iframe src="" src-storage="//player.vimeo.com/video/40036508" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/40036508">DMI Internship Program</a> from <a href="http://vimeo.com/utctl">UT Austin CTL</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+				</div>
+			</div>
+			<div class="portfolio-caption-background item1">
+				<div class="portfolio-item-text">
+					<h3>Digital Media Institute</h3>
+					<p>DMI is the program that I manage at the University of Texas. The program is staffed by very talented developers and creatives, and we work on high-end educational technology projects for the University. <a href="http://dmi.utexas.org" target="_blank">DMI website</a></p>
+				</div>
+				<div class="play-holder-dark">
+					<img class="dark-btn" src="images/black_play_btn.svg" alt="black play button"/>
+					<p>Learn More</p>
+				</div>
+			</div>
+		</div>
+	
+		<div class="portfolio-item-holder">
+			<div class="portfolio-item shown" onclick="return false;" back>
+				<img class="back-img" src="images/environ.jpg" alt="Environ Banner"/>
+				<div class="play-holder">
+					<img class="white-btn" src="images/white_play_btn.svg" alt="white play button"/>
+					<p>Learn More</p>
+				</div>
+			</div>
+			<div class="portfolio-item hidden" onclick="return false;">
+				<div class="videoWrapper" onclick="return false;">
+				<iframe width="50%" src="//www.youtube.com/embed/6N4xmNGeCVU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen src-storage="//www.youtube.com/embed/6N4xmNGeCVU?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1"></iframe>
+				</div>
+			</div>
+			<div class="portfolio-caption-background item1">
+				<div class="portfolio-item-text">
+					<h3>Environ</h3>
+					<p>Environ is an educational game developed by the Digital Media Institute staff. I am the game designer and producer for Environ. <a href="http://dmi.utexas.org/environ/environ.html" target="_blank">See Environ</a></p>
+				</div>
+				<div class="play-holder-dark">
+					<img class="dark-btn" src="images/black_play_btn.svg" alt="black play button"/>
+					<p>Learn More</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="portfolio-item-holder">
+			<div class="portfolio-item shown" onclick="return false;" back>
+				<img class="back-img" src="images/dmi_lab.jpg" alt="dmi-banner"/>
+				<div class="play-holder">
+					<img class="white-btn" src="images/white_play_btn.svg" alt="white play button"/>
+					<p>Learn More</p>
+				</div>
+			</div>
+			<div class="portfolio-item hidden" onclick="return false;">
+				<div class="videoWrapper" onclick="return false;">
+				<iframe src="" src-storage="//player.vimeo.com/video/40036508" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/40036508">DMI Internship Program</a> from <a href="http://vimeo.com/utctl">UT Austin CTL</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+				</div>
+			</div>
+			<div class="portfolio-caption-background item1">
+				<div class="portfolio-item-text">
+					<h3>Digital Media Institute</h3>
+					<p>DMI is the program that I manage at the University of Texas. The program is staffed by very talented developers and creatives, and we work on high-end educational technology projects for the University. <a href="http://dmi.utexas.org" target="_blank">DMI website</a></p>
+				</div>
+				<div class="play-holder-dark">
+					<img class="dark-btn" src="images/black_play_btn.svg" alt="black play button"/>
+					<p>Learn More</p>
+				</div>
+			</div>
+		</div>
+	
+		<div class="portfolio-item-holder">
+			<div class="portfolio-item shown" onclick="return false;" back>
+				<img class="back-img" src="images/environ.jpg" alt="Environ Banner"/>
+				<div class="play-holder">
+					<img class="white-btn" src="images/white_play_btn.svg" alt="white play button"/>
+					<p>Learn More</p>
+				</div>
+			</div>
+			<div class="portfolio-item hidden" onclick="return false;">
+				<div class="videoWrapper" onclick="return false;">
+				<iframe width="50%" src="//www.youtube.com/embed/6N4xmNGeCVU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen src-storage="//www.youtube.com/embed/6N4xmNGeCVU?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1"></iframe>
+				</div>
+			</div>
+			<div class="portfolio-caption-background item1">
+				<div class="portfolio-item-text">
+					<h3>Environ</h3>
+					<p>Environ is an educational game developed by the Digital Media Institute staff. I am the game designer and producer for Environ. <a href="http://dmi.utexas.org/environ/environ.html" target="_blank">See Environ</a></p>
+				</div>
+				<div class="play-holder-dark">
+					<img class="dark-btn" src="images/black_play_btn.svg" alt="black play button"/>
+					<p>Learn More</p>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<script>
+		$( ".portfolio-item-holder" ).click(function() {
+		//$( ".portfolio-item-holder, .videoWrapper, .see-more" ).click(function() {
+			// $( ".hidden" ).toggle();
+			// $( ".shown" ).toggle();
+			
+			var text = $(this).find( ".play-holder-dark p" ).text();
+			var videoSrc = $(this).find( "iframe" ).attr("src-storage");
+           	if(text == "Learn More")
+           	{
+               $("#about-me").toggle();
+               $("#my-work").css('width','98%');
+               $("#my-work h2").toggle();
+               $(".portfolio-item-holder").css('display','none');
+               $("header").css('display','none');
+               $(this).toggle();
+               $(this).find( "iframe" ).attr('src',videoSrc);
+               $(this).find( ".play-holder-dark p" ).text("Close");
+               $(this).find( ".play-holder-dark img" ).rotate({ animateTo:-90 });
+               // $(this).parent().css( "background-color", "red" );
+           	}
+           	else
+           	{
+               $("#my-work").css('width','65%');
+               $("#about-me").toggle();
+               $("#my-work h2").toggle();
+               $("header").toggle();
+               $(this).toggle();
+               $(".portfolio-item-holder").toggle();
+               $(this).find( ".play-holder-dark p" ).text("Learn More");
+               $(this).find( ".play-holder-dark img" ).rotate({ animateTo:0 });
+               $(this).find( "iframe" ).attr('src','');
+           	}	
+
+           	$(this).find( ".hidden" ).toggle();
+			$(this).find( ".shown" ).toggle();
+			// $(".see-more").text('Hide');
+		});
+	</script>
+
+	<script>
+		var doughnutData = [
+		{
+		value: 300,
+		// color:"#F7464A",
+		color:"#277E54",
+		highlight: "#FF5A5E",
+		label: "Red"
+		},
+		{
+		value: 50,
+		// color: "#46BFBD",
+		color:"#4D8848",
+		highlight: "#5AD3D1",
+		label: "Green"
+		},
+		{
+		value: 100,
+		// color: "#FDB45C",
+		color:"#7F8F2C",
+		highlight: "#FFC870",
+		label: "Yellow"
+		},
+		{
+		value: 40,
+		// color: "#949FB1",
+		color:"#B7A424",
+		highlight: "#A8B3C5",
+		label: "Grey"
+		},
+		{
+		value: 120,
+		// color: "#4D5360",
+		color:"#E4C419",
+		highlight: "#616774",
+		label: "Dark Grey"
+		}
+		];
+		window.onload = function(){
+		var ctx = document.getElementById("chart-1").getContext("2d");
+		var ctx2 = document.getElementById("chart-2").getContext("2d");
+		// var ctx3 = document.getElementById("chart-3").getContext("2d");
+		// var ctx4 = document.getElementById("chart-4").getContext("2d");
+		window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true});
+		window.myPolarArea = new Chart(ctx2).PolarArea(doughnutData, {responsive : true});
+		// window.myDoughnut = new Chart(ctx3).Doughnut(doughnutData, {responsive : true});
+		// window.myDoughnut = new Chart(ctx4).Doughnut(doughnutData, {responsive : true});
+		};
+	</script>
+	
+
+</body>
+
+</html>
