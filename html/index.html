@@ -29,12 +29,12 @@
 			<div class="chart-holder">
 				<canvas id="chart-2" height="300"></canvas>
 			</div>
-		<!-- 	<div class="chart-holder">
+			<div class="chart-holder">
 				<canvas id="chart-3" height="300px"></canvas>
 			</div>
-			<div class="chart-holder2">
+		<!-- 	<div class="chart-holder2">
 				<canvas id="chart-4" height="300px"></canvas>
-			</div> -->
+			</div>  -->
 			<div class="clearfix"></div>
 		</div>
 	</section>
@@ -156,12 +156,12 @@
 			var videoSrc = $(this).find( "iframe" ).attr("src-storage");
            	if(text == "Learn More")
            	{
-               $("#about-me").toggle();
-               $("#my-work").css('width','98%');
-               $("#my-work h2").toggle();
-               $(".portfolio-item-holder").css('display','none');
-               $("header").css('display','none');
-               $(this).toggle();
+               // $("#about-me").toggle();
+               // $("#my-work").css('width','98%');
+               // $("#my-work h2").toggle();
+               // $(".portfolio-item-holder").css('display','none');
+               // $("header").css('display','none');
+               // $(this).toggle();
                $(this).find( "iframe" ).attr('src',videoSrc);
                $(this).find( ".play-holder-dark p" ).text("Close");
                $(this).find( ".play-holder-dark img" ).rotate({ animateTo:-90 });
@@ -169,12 +169,12 @@
            	}
            	else
            	{
-               $("#my-work").css('width','65%');
-               $("#about-me").toggle();
-               $("#my-work h2").toggle();
-               $("header").toggle();
-               $(this).toggle();
-               $(".portfolio-item-holder").toggle();
+               // $("#my-work").css('width','65%');
+               // $("#about-me").toggle();
+               // $("#my-work h2").toggle();
+               // $("header").toggle();
+               // $(this).toggle();
+               // $(".portfolio-item-holder").toggle();
                $(this).find( ".play-holder-dark p" ).text("Learn More");
                $(this).find( ".play-holder-dark img" ).rotate({ animateTo:0 });
                $(this).find( "iframe" ).attr('src','');
@@ -187,6 +187,32 @@
 	</script>
 
 	<script>
+		var radarData = {
+    		labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+    		datasets: [
+        {
+            label: "My First dataset",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [65, 59, 90, 81, 56, 55, 40]
+        },
+        {
+            label: "My Second dataset",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [28, 48, 40, 19, 96, 27, 100]
+        }
+    ]
+};
+
 		var doughnutData = [
 		{
 		value: 300,
@@ -227,11 +253,11 @@
 		window.onload = function(){
 		var ctx = document.getElementById("chart-1").getContext("2d");
 		var ctx2 = document.getElementById("chart-2").getContext("2d");
-		// var ctx3 = document.getElementById("chart-3").getContext("2d");
+		var ctx3 = document.getElementById("chart-3").getContext("2d");
 		// var ctx4 = document.getElementById("chart-4").getContext("2d");
 		window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true});
 		window.myPolarArea = new Chart(ctx2).PolarArea(doughnutData, {responsive : true});
-		// window.myDoughnut = new Chart(ctx3).Doughnut(doughnutData, {responsive : true});
+		window.myRadar = new Chart(ctx3).Radar(radarData, {responsive : true});
 		// window.myDoughnut = new Chart(ctx4).Doughnut(doughnutData, {responsive : true});
 		// this is a test;
 		};

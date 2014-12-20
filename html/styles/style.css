@@ -55,8 +55,8 @@ h3 {
 }
 
 #about-me {
-	width: 35%;
-	float: right;
+	width: 100%;
+	/*float: right;*/
 }
 
 #about-me, #my-work {
@@ -67,8 +67,8 @@ h3 {
 }
 
 #my-work {
-	width: 65%;
-	float: left;
+	width: 100%;
+	/*float: left;*/
 }
 
 #my-work h2 {
@@ -111,15 +111,16 @@ a {
 #chart-div {
 	/*border: 1px blue solid;*/
 	width: 100%;
-	margin: 0px auto;
+	/*margin: 1% 1%;
+	float: left;*/
 }
 
 .portfolio-item-holder {
 	width: 100%;
 	margin: 30px 0px 65px 0px;
 	cursor: pointer;	
-	border-right: 1px gray solid;
-	padding-right: 1%;
+	/*border-right: 1px gray solid;
+	padding-right: 1%;*/
 
 }
 
@@ -278,9 +279,10 @@ a {
 }
 
 .chart-holder {
-	width: 75%;
+	width: 28%;
 	/*border: 1px red solid;*/
-	margin: 6% auto 6% auto;
+	margin: 2% 2%;
+	float: left;
 }
 
 .chart-holder {
