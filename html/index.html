@@ -80,7 +80,7 @@
 			</div>
 			<div class="portfolio-item hidden" onclick="return false;">
 				<div class="videoWrapper" onclick="return false;">
-				<iframe width="50%" src="//www.youtube.com/embed/6N4xmNGeCVU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen src-storage="//www.youtube.com/embed/6N4xmNGeCVU?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1"></iframe>
+				<iframe width="50%" src="//www.youtube.com/embed/CMsEH0HTl1I?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen src-storage="//www.youtube.com/embed/CMsEH0HTl1I?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1"></iframe>
 				</div>
 			</div>
 			<div class="portfolio-caption-background item1">
@@ -187,31 +187,46 @@
 	</script>
 
 	<script>
+		var barData = {
+    		labels: ["UI/UX", "Web Dev", "Learning Design", "Teaching", "Project Management", "Multimedia", "Team Building", "UI/UX", "Web Dev", "Learning Design", "Teaching", "Project Management", "Multimedia", "Team Building"],
+    		datasets: [
+		        {
+		            label: "Proficiencies",
+		            fillColor: "rgba(220,220,220,0.5)",
+		            strokeColor: "rgba(220,220,220,0.8)",
+		            highlightFill: "rgba(220,220,220,0.75)",
+		            highlightStroke: "rgba(220,220,220,1)",
+		            data: [65, 59, 80, 81, 56, 55, 40, 65, 59, 80, 81, 56, 55, 40]
+		        }
+		    ]
+		};
+
+
 		var radarData = {
     		labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
     		datasets: [
-        {
-            label: "My First dataset",
-            fillColor: "rgba(220,220,220,0.2)",
-            strokeColor: "rgba(220,220,220,1)",
-            pointColor: "rgba(220,220,220,1)",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(220,220,220,1)",
-            data: [65, 59, 90, 81, 56, 55, 40]
-        },
-        {
-            label: "My Second dataset",
-            fillColor: "rgba(151,187,205,0.2)",
-            strokeColor: "rgba(151,187,205,1)",
-            pointColor: "rgba(151,187,205,1)",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(151,187,205,1)",
-            data: [28, 48, 40, 19, 96, 27, 100]
-        }
-    ]
-};
+	        {
+	            label: "My First dataset",
+	            fillColor: "rgba(220,220,220,0.2)",
+	            strokeColor: "rgba(220,220,220,1)",
+	            pointColor: "rgba(220,220,220,1)",
+	            pointStrokeColor: "#fff",
+	            pointHighlightFill: "#fff",
+	            pointHighlightStroke: "rgba(220,220,220,1)",
+	            data: [65, 59, 90, 81, 56, 55, 40]
+	        },
+	        {
+	            label: "My Second dataset",
+	            fillColor: "rgba(151,187,205,0.2)",
+	            strokeColor: "rgba(151,187,205,1)",
+	            pointColor: "rgba(151,187,205,1)",
+	            pointStrokeColor: "#fff",
+	            pointHighlightFill: "#fff",
+	            pointHighlightStroke: "rgba(151,187,205,1)",
+	            data: [28, 48, 40, 19, 96, 27, 100]
+	        }
+    		]
+		};
 
 		var doughnutData = [
 		{
@@ -255,9 +270,9 @@
 		var ctx2 = document.getElementById("chart-2").getContext("2d");
 		var ctx3 = document.getElementById("chart-3").getContext("2d");
 		// var ctx4 = document.getElementById("chart-4").getContext("2d");
-		window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true});
-		window.myPolarArea = new Chart(ctx2).PolarArea(doughnutData, {responsive : true});
-		window.myRadar = new Chart(ctx3).Radar(radarData, {responsive : true});
+		window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true, animationSteps: 20, animationEasing: "easeOutQuart"});
+		window.myBarChart = new Chart(ctx2).Bar(barData, {responsive : true, animationSteps: 20});
+		window.myRadar = new Chart(ctx3).Radar(radarData, {responsive : true, pointLabelFontSize : 20});
 		// window.myDoughnut = new Chart(ctx4).Doughnut(doughnutData, {responsive : true});
 		// this is a test;
 		};

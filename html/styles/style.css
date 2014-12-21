@@ -91,8 +91,8 @@ h3 {
 	color: #333;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	font-size: .9em;
-	line-height: 1.3em;
+	font-size: 1em;
+	line-height: 1.4em;
 }
 
 a {
@@ -201,7 +201,7 @@ a {
 	width: 15%;
 	min-width: 120px;
 	position: absolute;
-	top: 2%;
+	top: 0;
 	right: 1%;
 	opacity: .5;
 }
