@@ -11,16 +11,17 @@ body {
 	color: #333;
 	/*background-image: radial-gradient(ellipse closest-side,
 rgba(0,0,0,0), rgba(0,0,0,0.2)), url("../images/sprinkles_light.png");*/
-	background: url("../images/sprinkles_light.png");
+	/*background: url("../images/sprinkles_light.png");*/
+	font-family: 'Open Sans', sans-serif;
 }
 
 header {
 	margin-top: 20px;
 	text-align: center;
+	margin-bottom: 70px;
 }
 
 h1, h2, h3, h4, span {
-	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	margin: 10px 0px;
 }
@@ -56,27 +57,51 @@ h3 {
 
 #about-me {
 	width: 100%;
+	margin: 0 20px;
+	max-width: 1200px;
+
 	/*float: right;*/
+	/*border: 1px gray solid;*/
+}
+
+#about-me p{
+	color: #5a5a5a;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.4em;
+	/*float: right;*/
+	/*border: 1px gray solid;*/
+}
+
+#about-me h3{
+	font-size: 1.2em;
+	/*float: right;*/
+	/*border: 1px gray solid;*/
 }
 
 #about-me, #my-work {
-	margin: 40px 0px 0px 0px;
+	margin: 40px auto 40px auto;
 	padding: 0 0 0 0;
 	color: #333;
+	/*max-width: 800px;*/
 	/*border: 1px red solid;*/
 }
 
 #my-work {
 	width: 100%;
+	max-width: 1200px;
 	/*float: left;*/
 }
 
 #my-work h2 {
 	text-align: center;
+	color: #4C8747;
 }
 
 #about-me h2 {
 	text-align: center;
+	color: #4C8747;
 }
 
 #my-work h3 {
@@ -108,16 +133,10 @@ a {
 	/*display: none;*/
 }
 
-#chart-div {
-	/*border: 1px blue solid;*/
-	width: 100%;
-	/*margin: 1% 1%;
-	float: left;*/
-}
-
 .portfolio-item-holder {
 	width: 100%;
-	margin: 30px 0px 65px 0px;
+	/*margin: 30px 0px 65px 0px;*/
+	margin: 30px auto 65px auto;
 	cursor: pointer;	
 	/*border-right: 1px gray solid;
 	padding-right: 1%;*/
@@ -134,7 +153,7 @@ a {
 }
 
 .portfolio-item {
-		position: relative;
+	position: relative;
 	/*border: 1px blue solid;*/
 	/*height: 100%;*/
 }
@@ -278,10 +297,90 @@ a {
 	/*background-color: #F25F29;*/
 }
 
-.chart-holder {
-	width: 28%;
+.about-holder {
+	width: 50%;
+	/*height: 300px;*/
+	/*display: inline-block;*/
+	/*border: 1px red solid;*/
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	/*background-color: green;*/
+	text-align: center;
+}
+
+.about-holder img{
+/*	width: 7%;
+	min-width: 50px;
+	opacity: .7;*/
+
+}
+
+.about-holder p{
+	margin: 2% 10% 10% 10%;
+}
+
+
+
+.icon-container {
+	width: 80px;
+	height: 80px;
+/*	min-width: 50px;
+	min-height: 50px;*/
+	/*opacity: .7;*/
+	margin: 0 auto;
+	/*padding: 5%;*/
+	border: 1px solid #e5e5e5;
+	border: 1px solid #ccc;
+    border-radius: 50%;
+    /*background-color: #eee;*/
+   /* background-color: #5AD3D1;*/
+    background-color: #fff;
+}
+
+.icon-container img{
+	width: 50%;
+	margin-top: 8%;
+	visibility: hidden;
+}
+
+.icon-container svg{
+	width: 50%;
+	margin-top: 8%;
+	visibility: visible;
+}
+
+svg path{
+	fill: #4C8747;
+}
+
+#chart-div {
+	display: none;
+	/*border: 1px blue solid;*/
+	width: 100%;
+	/*margin: 1% 1%;*/
+	float: left;
+}
+
+.chart-holder1 {
+	width: 0%;
 	/*border: 1px red solid;*/
 	margin: 2% 2%;
+	float: left;
+}
+
+.chart-holder2 {
+	width: 95%;
+	/*height: 20%;*/
+	border: 1px red solid;
+	margin: 4% 4%;
+	float: left;
+}
+
+.chart-holder3 {
+	width: 95%;
+	/*border: 1px red solid;*/
+	margin: 4% 4%;
 	float: left;
 }
 
