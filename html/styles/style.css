@@ -13,21 +13,23 @@ body {
 rgba(0,0,0,0), rgba(0,0,0,0.2)), url("../images/sprinkles_light.png");*/
 	/*background: url("../images/sprinkles_light.png");*/
 	font-family: 'Open Sans', sans-serif;
+	-webkit-text-size-adjust: 100%;
 }
 
 header {
 	margin-top: 20px;
 	text-align: center;
-	margin-bottom: 70px;
+	margin-bottom: 10px;
 }
 
-h1, h2, h3, h4, span {
+h2, h3, h4, span {
 	font-weight: 600;
 	margin: 10px 0px;
 }
 
 h1 {
-	font-size: 1.75em;
+	font-size: 2.25em;
+	margin: 10px 0px;
 }
 
 span, h4 {
@@ -36,15 +38,17 @@ span, h4 {
 }
 
 h2 {
-	font-size: 1.25em;
+	font-size: 1.5em;
 	font-weight: 400;
 	margin-left: 2%;
 }
 
 h3 {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-weight: 600;
 }
+
+
 
 .clearfix:after {
 	visibility: hidden;
@@ -56,12 +60,11 @@ h3 {
 }
 
 #about-me {
-	width: 100%;
+	width: 34%;
 	margin: 0 20px;
 	max-width: 1200px;
 
-	/*float: right;*/
-	/*border: 1px gray solid;*/
+	float: right;
 }
 
 #about-me p{
@@ -89,9 +92,9 @@ h3 {
 }
 
 #my-work {
-	width: 100%;
+	width: 65%;
 	max-width: 1200px;
-	/*float: left;*/
+	float: left;
 }
 
 #my-work h2 {
@@ -102,6 +105,7 @@ h3 {
 #about-me h2 {
 	text-align: center;
 	color: #4C8747;
+	margin-bottom: 40px;
 }
 
 #my-work h3 {
@@ -134,28 +138,36 @@ a {
 }
 
 .portfolio-item-holder {
-	width: 100%;
+	width: 95%;
 	/*margin: 30px 0px 65px 0px;*/
 	margin: 30px auto 65px auto;
-	cursor: pointer;	
+	/*cursor: pointer;*/	
 	/*border-right: 1px gray solid;
 	padding-right: 1%;*/
+	border-right: 1px gray solid;
+	float: right;
 
 }
 
 .portfolio-item-holder:hover .play-holder {
-	opacity: .8;
+	visibility: visible;
+	opacity: .4;
 }
 
-.portfolio-item-holder:hover .portfolio-caption-background {
+.portfolio-item-holder:hover .play-holder-dark {
 	opacity: 1;
-	color: #7F8F2C;
 }
+
+/*.portfolio-item-holder:hover .portfolio-caption-background {*/
+/*.play-holder-dark:hover  {
+	opacity: 1;
+}*/
 
 .portfolio-item {
 	position: relative;
 	/*border: 1px blue solid;*/
 	/*height: 100%;*/
+	cursor: pointer;
 }
 
 .back-img{
@@ -181,21 +193,25 @@ a {
 }
 
 .play-holder {
-	display: none;
+	visibility: hidden;
 	width: 15%;
 	position: absolute;
-	bottom: 8%;
+	bottom: 30%;
 	right: 3%;
 	opacity: .5;
-	background: rgba(0,0,0,0.3);
+	/*background: rgba(0,0,0,0.3);*/
 	text-align: center;
+}
+
+.play-holder p{
+	display: none;
 }
 
 .portfolio-item-text {
 	/*border: 1px green solid;*/
 	width: 80%;
 	margin-top: 2%;
-	margin-left: 4%;
+	margin-left: 0px;
 }
 
 .play-holder:hover {
@@ -223,6 +239,7 @@ a {
 	top: 0;
 	right: 1%;
 	opacity: .5;
+	cursor: pointer;
 }
 
 .play-holder-dark img{
@@ -298,7 +315,7 @@ a {
 }
 
 .about-holder {
-	width: 50%;
+	width: 100%;
 	/*height: 300px;*/
 	/*display: inline-block;*/
 	/*border: 1px red solid;*/
@@ -317,7 +334,7 @@ a {
 }
 
 .about-holder p{
-	margin: 2% 10% 10% 10%;
+	margin: 2% 10% 16% 10%;
 }
 
 
@@ -395,3 +412,67 @@ svg path{
 	/*border: 1px green solid;*/
 	/*background-color: green;*/
 }
+
+/*@media screen and (max-width: 2000px) {
+	#about-me {
+		width: 100%;
+	}
+
+	#my-work {
+		width: 100%;
+		float: none;
+	}
+
+	#my-work h3{
+		width: 90%;
+	}
+
+	.about-holder {
+		width: 50%;
+	}	
+
+
+	.portfolio-item-holder {
+		border-right: none;
+		width: 100%;
+		float: none;
+		margin-bottom: 2%;
+		position: relative;
+		border-top: 1px #ccc solid;
+	}
+
+	.portfolio-item {
+		width: 65%;
+		float:left;
+	}
+
+	.portfolio-caption-background {
+		width: 35%;
+		position: absolute;
+		right: 0px;
+		left: auto;
+		height: 100%;
+		overflow: hidden;
+	}
+
+
+	.portfolio-item-text p {
+		width: 95%;
+	}
+
+	.play-holder-dark {
+		top: auto;
+		right: auto;
+		bottom: 2px;
+	}
+
+	.portfolio-item-text {
+		width: 100%;
+		margin-left: 3%;
+		padding-top: 0;
+	}
+
+	.about-holder p {
+		margin: 2% 10% 10% 10%;
+	}
+}*/
