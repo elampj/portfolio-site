@@ -16,9 +16,22 @@ rgba(0,0,0,0), rgba(0,0,0,0.2)), url("../images/sprinkles_light.png");*/
 }
 
 header {
-	margin-top: 20px;
-	text-align: center;
-	margin-bottom: 70px;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+}
+
+.header-holder {
+	/*margin-top: 20px;*/
+	
+	margin-bottom: 1%;
+	height: 0px;
+	padding-bottom: 25%;
+	overflow: hidden;
+	position: relative;
+	background-image: url("../images/mainbanner2.jpg");
+	background-size: cover;
 }
 
 h2, h3, h4, span {
@@ -28,7 +41,7 @@ h2, h3, h4, span {
 
 h1 {
 	font-size: 1.75em;
-	margin: 10px 0px;
+	margin: 5px 0px;
 }
 
 span, h4 {
@@ -48,7 +61,36 @@ h3 {
 	line-height: 1.2em;
 }
 
+.banner-video {
+	display: none;
+}
 
+.banner-video iframe{
+	
+	opacity: 1;
+}
+
+.title-holder {
+	position: absolute; 
+	left:0; 
+	bottom:0;
+	color: white;
+	text-align: left;
+	/*background-color: black;*/
+	width: 50%;
+	/*height: 100%;*/
+	padding-bottom: 2%;
+	padding-left: 4%;
+	/*background: rgba(0,0,0,0.7);*/
+	text-shadow: 0px 0px 11px rgba(150, 150, 150, 1);
+}
+
+.title-holder p{
+	display: inline;
+	font-size: 1em;
+	line-height: 1.4em;
+	white-space: nowrap;
+}
 
 .clearfix:after {
 	visibility: hidden;
@@ -63,7 +105,7 @@ h3 {
 	/*width: 34%;*/
 	width: 95%;
 	margin: 20px 0px;
-	max-width: 1200px;
+	max-width: 1150px;
 	/*float: right;*/
 }
 
@@ -576,6 +618,10 @@ div.selected .portfolio-caption-background {
 		margin: 20px auto 20px auto;
 	}
 
+	h1 {
+		font-size: 1.2em !important;
+	}
+
 	h2 {
 		font-size: 1em !important;
 	} 
@@ -586,6 +632,10 @@ div.selected .portfolio-caption-background {
 
 	span, p, h4 {
 		font-size: .75em !important;
+	}
+
+	.title-holder p, h4{
+		font-size: .7em !important;
 	}
 
 	.about-holder {
