@@ -3,6 +3,7 @@
 	
 <head>
 	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 	<title>Peter Elam's Portfolio</title>
 	<link rel="stylesheet" href="styles/reset.css" media="screen" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -21,37 +22,42 @@
 
 	<section id="about-me">
 		<h2>About Me</h2>
-
-		<div class="about-holder">
-			<div class="icon-container">
-				<img class="about-icon svg" src="images/pen.svg" alt="designer icon"/>
+		<div class="about-item">
+			<div class="about-holder">
+				<div class="icon-container">
+					<img class="about-icon svg" src="images/pen.svg" alt="designer icon"/>
+				</div>
+				<h3>Designer, Developer, Consultant</h3>
+				<p>I draw upon a very broad technical background to design, develop, and recommend solutions to interesting problems.</p>
 			</div>
-			<h3>Designer, Developer, Consultant</h3>
-			<p>I draw upon a very broad technical background to design, develop, and recommend solutions to interesting problems.</p>
 		</div>
-
-		<div class="about-holder">
-			<div class="icon-container">
-				<img class="about-icon svg" src="images/hammer.svg" alt="hammer icon"/>
+		<div class="about-item">
+			<div class="about-holder">
+				<div class="icon-container">
+					<img class="about-icon svg" src="images/hammer.svg" alt="hammer icon"/>
+				</div>
+				<h3>Creator, Producer, Project Manager</h3>
+				<p>I create things myself, but I also manage projects and project teams.</p>
 			</div>
-			<h3>Creator, Producer, Project Manager</h3>
-			<p>I create things myself, but I also manage projects and project teams.</p>
 		</div>
 		<div class="clearfix"></div>
-		<div class="about-holder">
-			<div class="icon-container">
-				<img class="about-icon svg" src="images/users.svg" alt="users icon"/>
+		<div class="about-item">
+			<div class="about-holder">
+				<div class="icon-container">
+					<img class="about-icon svg" src="images/users.svg" alt="users icon"/>
+				</div>
+				<h3>Program Manager</h3>
+				<p>I also build programs in which I recruit and manage very talented creatives/developers.</p>
 			</div>
-			<h3>Program Manager</h3>
-			<p>I also build programs in which I recruit and manage very talented creatives/developers.</p>
 		</div>
-
-		<div class="about-holder">
-			<div class="icon-container">
-				<img class="about-icon svg" src="images/magic-wand.svg" alt="magic wand icon"/>
+		<div class="about-item">
+			<div class="about-holder">
+				<div class="icon-container">
+					<img class="about-icon svg" src="images/magic-wand.svg" alt="magic wand icon"/>
+				</div>
+				<h3>Learning Designer</h3>
+				<p>I have special expertise in learning design, and solving teaching and learning problems.</p>
 			</div>
-			<h3>Learning Designer</h3>
-			<p>I have special expertise in learning design, and solving teaching and learning problems.</p>
 		</div>
 		<!-- <div class="color-divider"></div> -->
 
@@ -117,7 +123,7 @@
 				<iframe width="50%" src="//www.youtube.com/embed/CMsEH0HTl1I?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen src-storage="//www.youtube.com/embed/CMsEH0HTl1I?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1"></iframe>
 				</div>
 			</div>
-			<div class="portfolio-caption-background item1">
+			<div class="portfolio-caption-background">
 				<div class="portfolio-item-text">
 					<h3>Environ - Educational Game</h3>
 					<p>Environ is an educational game developed by the Digital Media Institute staff. I am the producer and game designer for Environ. <a href="http://dmi.utexas.org/environ/environ.html" target="_blank">See Environ</a></p>
@@ -280,8 +286,9 @@
                // $(".portfolio-item-holder").css('display','none');
                // $("header").css('display','none');
                // portItemHolder.toggle();
-               portItemHolder.find( ".portfolio-caption-background" ).css('width','25%');
-               portItemHolder.find( ".portfolio-item" ).css('width','75%');
+               // portItemHolder.find( ".portfolio-caption-background" ).css('width','25%');
+               // portItemHolder.find( ".portfolio-item" ).css('width','75%');
+               portItemHolder.addClass('selected');
                portItemHolder.find( "iframe" ).attr('src',videoSrc);
                portItemHolder.find( ".play-holder-dark p" ).text("Close");
                portItemHolder.find( ".play-holder-dark img" ).rotate({ animateTo:-90 });
@@ -296,8 +303,10 @@
                // $(this).toggle();
                // $(".portfolio-item-holder").toggle();
 
-               portItemHolder.find( ".portfolio-caption-background" ).css('width','35%');
-               portItemHolder.find( ".portfolio-item" ).css('width','65%');
+               // portItemHolder.find( ".portfolio-caption-background" ).css('width','35%');
+               // portItemHolder.find( ".portfolio-item" ).css('width','65%');
+               
+               portItemHolder.removeClass('selected');
                portItemHolder.find( ".play-holder-dark p" ).text("More Info");
                portItemHolder.find( ".play-holder-dark img" ).rotate({ animateTo:0 });
                portItemHolder.find( "iframe" ).attr('src','');

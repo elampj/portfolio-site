@@ -13,13 +13,12 @@ body {
 rgba(0,0,0,0), rgba(0,0,0,0.2)), url("../images/sprinkles_light.png");*/
 	/*background: url("../images/sprinkles_light.png");*/
 	font-family: 'Open Sans', sans-serif;
-	-webkit-text-size-adjust: 100%;
 }
 
 header {
 	margin-top: 20px;
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: 70px;
 }
 
 h2, h3, h4, span {
@@ -28,7 +27,7 @@ h2, h3, h4, span {
 }
 
 h1 {
-	font-size: 2.25em;
+	font-size: 1.75em;
 	margin: 10px 0px;
 }
 
@@ -46,6 +45,7 @@ h2 {
 h3 {
 	font-size: 1.2em;
 	font-weight: 600;
+	line-height: 1.2em;
 }
 
 
@@ -60,12 +60,13 @@ h3 {
 }
 
 #about-me {
-	width: 34%;
-	margin: 0 20px;
+	/*width: 34%;*/
+	width: 95%;
+	margin: 20px 0px;
 	max-width: 1200px;
-
-	float: right;
+	/*float: right;*/
 }
+
 
 #about-me p{
 	color: #5a5a5a;
@@ -92,9 +93,11 @@ h3 {
 }
 
 #my-work {
-	width: 65%;
+	/*width: 65%;*/
+	width: 100%;
+	float: none;
 	max-width: 1200px;
-	float: left;
+	/*float: left;*/
 }
 
 #my-work h2 {
@@ -106,12 +109,14 @@ h3 {
 	text-align: center;
 	color: #4C8747;
 	margin-bottom: 40px;
+	display: none;
 }
 
 #my-work h3 {
 	color: #333;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	width: 90%;
 }
 
 #my-work p, a {
@@ -137,20 +142,115 @@ a {
 	/*display: none;*/
 }
 
-.portfolio-item-holder {
+.about-item {
+	width: 50%;
+	float: left;
+	margin-bottom: 40px;
+	margin-top: 15px;
+}
+
+.about-holder {
+	/*width: 100%;*/
+	position: relative;
+	
+	/*height: 300px;*/
+	/*display: inline-block;*/
+	/*border: 1px red solid;*/
+	
+	margin: 0px 10px;
+	padding: 0px;
+	padding-left: 100px;
+	/*background-color: green;*/
+	text-align: left;
+}
+
+.about-holder:hover .icon-container {
+	background-color: #E5F3E4;
+}
+
+.about-holder img{
+/*	width: 7%;
+	min-width: 50px;
+	opacity: .7;*/
+}
+
+.about-holder p{
 	width: 95%;
+	/*margin: 2% 10% 16% 10%;*/
+	/*margin: 2% 10% 10% 10%;*/
+	/*width: 100%;
+	float: left;*/
+}
+
+.about-holder h3{
+	/*margin: 2% 10% 16% 10%;*/
+	margin-top: 0;
+}
+
+.icon-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+/*	min-width: 50px;
+	min-height: 50px;*/
+	/*opacity: .7;*/
+	margin-right: 20px;
+	/*padding: 5%;*/
+	border: 1px solid #e5e5e5;
+	border: 1px solid #ccc;
+    border-radius: 50%;
+    /*background-color: #eee;*/
+   /* background-color: #5AD3D1;*/
+    background-color: #fff;
+}
+
+.icon-container img{
+	width: 50%;
+	margin-top: 8%;
+	visibility: hidden;
+}
+
+.icon-container svg{
+	width: 50%;
+	margin-top: 8%;
+	visibility: visible;
+}
+
+svg path{
+	fill: #4C8747;
+}
+
+.portfolio-item-holder {
+	/*width: 95%;*/
 	/*margin: 30px 0px 65px 0px;*/
-	margin: 30px auto 65px auto;
+	width: 100%;
+	margin: 45px auto 45px auto;
+
+	margin-bottom: 2%;
+	position: relative;
+	border-top: 1px #ccc solid;
 	/*cursor: pointer;*/	
 	/*border-right: 1px gray solid;
 	padding-right: 1%;*/
-	border-right: 1px gray solid;
-	float: right;
+	/*border-right: 1px gray solid;*/
+	/*float: right;*/
 
 }
 
+/*.portfolio-item-holder {
+		border-right: none;
+		width: 100%;
+		float: none;
+		margin-bottom: 2%;
+		position: relative;
+		border-top: 1px #ccc solid;
+	}*/
+
 .portfolio-item-holder:hover .play-holder {
-	visibility: visible;
+/*	visibility: visible;*/
 	opacity: .4;
 }
 
@@ -164,10 +264,17 @@ a {
 }*/
 
 .portfolio-item {
-	position: relative;
+	width: 65%;
+	float:left;
+	/*position: relative;*/
 	/*border: 1px blue solid;*/
 	/*height: 100%;*/
+	position: relative;
 	cursor: pointer;
+}
+
+div.selected .portfolio-item {
+	width: 75%;
 }
 
 .back-img{
@@ -176,29 +283,40 @@ a {
 
 
 .portfolio-caption-background {
-	width: 100%;
+	width: 35%;
+	position: absolute;
+	right: 0px;
+	/*left: auto;*/
+	height: 100%;
+	overflow: hidden;
+	/*width: 100%;*/
 	/*height: 120px;*/
-	margin: 0px auto;
-	position: relative;
-	bottom: 0px;
-	left: 0px;
+	/*margin: 0px auto;*/
+/*	position: relative;*/
+	/*bottom: 0px;
+	left: 0px;*/
 	opacity: .7;
 	/*border: 1px blue solid;*/
 	/*height: 100%;*/
 	/*float: left;*/
 }
 
+div.selected .portfolio-caption-background {
+	width: 25%;
+}
+
+
+
 .portfolio-caption-background p{
 	width: 90%;
 }
 
 .play-holder {
-	visibility: hidden;
 	width: 15%;
 	position: absolute;
 	bottom: 30%;
 	right: 3%;
-	opacity: .5;
+	opacity: .1;
 	/*background: rgba(0,0,0,0.3);*/
 	text-align: center;
 }
@@ -209,9 +327,14 @@ a {
 
 .portfolio-item-text {
 	/*border: 1px green solid;*/
-	width: 80%;
+	width: 95%;
 	margin-top: 2%;
-	margin-left: 0px;
+	margin-left: 5%;
+	padding-top: 0;
+}
+
+.portfolio-item-text p {
+	width: 95%;
 }
 
 .play-holder:hover {
@@ -236,10 +359,12 @@ a {
 	width: 15%;
 	min-width: 120px;
 	position: absolute;
-	top: 0;
-	right: 1%;
+	top: auto;
+	right: auto;
+	bottom: 2px;
 	opacity: .5;
 	cursor: pointer;
+	margin-left: 10px;
 }
 
 .play-holder-dark img{
@@ -314,62 +439,7 @@ a {
 	/*background-color: #F25F29;*/
 }
 
-.about-holder {
-	width: 100%;
-	/*height: 300px;*/
-	/*display: inline-block;*/
-	/*border: 1px red solid;*/
-	float: left;
-	margin: 0px;
-	padding: 0px;
-	/*background-color: green;*/
-	text-align: center;
-}
 
-.about-holder img{
-/*	width: 7%;
-	min-width: 50px;
-	opacity: .7;*/
-
-}
-
-.about-holder p{
-	margin: 2% 10% 16% 10%;
-}
-
-
-
-.icon-container {
-	width: 80px;
-	height: 80px;
-/*	min-width: 50px;
-	min-height: 50px;*/
-	/*opacity: .7;*/
-	margin: 0 auto;
-	/*padding: 5%;*/
-	border: 1px solid #e5e5e5;
-	border: 1px solid #ccc;
-    border-radius: 50%;
-    /*background-color: #eee;*/
-   /* background-color: #5AD3D1;*/
-    background-color: #fff;
-}
-
-.icon-container img{
-	width: 50%;
-	margin-top: 8%;
-	visibility: hidden;
-}
-
-.icon-container svg{
-	width: 50%;
-	margin-top: 8%;
-	visibility: visible;
-}
-
-svg path{
-	fill: #4C8747;
-}
 
 #chart-div {
 	display: none;
@@ -413,66 +483,141 @@ svg path{
 	/*background-color: green;*/
 }
 
-/*@media screen and (max-width: 2000px) {
-	#about-me {
-		width: 100%;
+@media screen and (max-width: 1024px) {
+ 
+
+	h3 {
+		font-size: 1em !important;
+	} 
+
+	span, p, h4 {
+		font-size: .75em !important;
 	}
 
-	#my-work {
-		width: 100%;
-		float: none;
+	.play-holder-dark p{
+		font-size: 1em !important;
 	}
+}
 
-	#my-work h3{
-		width: 90%;
+@media screen and (max-width: 900px) {
+
+	.play-holder-dark {
+		min-width: 75px;
+		bottom: -5px;
 	}
+}
 
-	.about-holder {
-		width: 50%;
-	}	
-
+@media screen and (max-width: 760px) {
 
 	.portfolio-item-holder {
-		border-right: none;
+		border: none;
 		width: 100%;
 		float: none;
-		margin-bottom: 2%;
+		margin-bottom: 7%;
 		position: relative;
-		border-top: 1px #ccc solid;
 	}
 
 	.portfolio-item {
-		width: 65%;
-		float:left;
+		width: 100%;
+		float: none;
+	}
+
+	div.selected .portfolio-item {
+		width: 100%;
 	}
 
 	.portfolio-caption-background {
-		width: 35%;
-		position: absolute;
-		right: 0px;
-		left: auto;
-		height: 100%;
-		overflow: hidden;
+		float: none;
+		position: relative;
+		overflow: visible;
+		width: 100%;
 	}
 
+	div.selected .portfolio-caption-background {
+		width: 100%;
+	}
 
 	.portfolio-item-text p {
-		width: 95%;
+		width: 70%;
 	}
 
 	.play-holder-dark {
-		top: auto;
-		right: auto;
-		bottom: 2px;
+		/*position: relative;*/
+		top: 0px;
+		right: 0px;
+		float: right;
+		
+	}
+
+	.play-holder-dark p {
+		font-size: 1em !important;
 	}
 
 	.portfolio-item-text {
-		width: 100%;
+		width: 97%;
 		margin-left: 3%;
 		padding-top: 0;
 	}
 
-	.about-holder p {
-		margin: 2% 10% 10% 10%;
+}
+
+
+@media screen and (max-width: 650px) {
+
+	body {
+		-webkit-text-size-adjust: 100%;
 	}
-}*/
+
+	header {
+		margin-bottom: 20px;
+	}
+	
+	#about-me, #my-work {
+		margin: 20px auto 20px auto;
+	}
+
+	h2 {
+		font-size: 1em !important;
+	} 
+
+	h2, h3 {
+		font-size: .9em !important;
+	} 
+
+	span, p, h4 {
+		font-size: .75em !important;
+	}
+
+	.about-holder {
+		padding: 0 0 0 80px;
+	}
+
+	.about-item {
+		width: 100%;
+		margin: 20px 0px;
+	}
+
+	.icon-container {
+		width: 60px;
+		height: 60px;
+	}
+
+	.icon-container svg {
+    	margin-top: -2px;
+	}
+
+	.portfolio-item-holder {
+		margin: 5% auto 45px auto;
+		margin-bottom: 10%;
+	}
+
+	.play-holder-dark {
+		min-width: 80px;
+		right: 10px;
+		top: 10px;
+	}
+
+	.play-holder-dark p{
+		font-size: 1em !important;
+	}
+}
