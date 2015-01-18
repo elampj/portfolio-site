@@ -22,6 +22,13 @@ header {
 	background-color: black;
 }
 
+header h4 {
+	margin: 12px 0px 10px 0px;
+	color: #B7DBA7;
+	font-weight: 300;
+	font-size: 1em;
+}
+
 .header-holder {
 	/*margin-top: 20px;*/
 	
@@ -316,7 +323,7 @@ svg path{
 }
 
 div.selected .portfolio-item {
-	width: 75%;
+	width: 80%;
 }
 
 .back-img{
@@ -344,7 +351,7 @@ div.selected .portfolio-item {
 }
 
 div.selected .portfolio-caption-background {
-	width: 25%;
+	width: 20%;
 }
 
 
@@ -527,13 +534,16 @@ div.selected .portfolio-caption-background {
 
 @media screen and (max-width: 1024px) {
  
-
 	h3 {
 		font-size: 1em !important;
 	} 
 
 	span, p, h4 {
 		font-size: .75em !important;
+	}
+
+	header h4 {
+		font-size: 1em !important;
 	}
 
 	.play-holder-dark p{
@@ -631,6 +641,11 @@ div.selected .portfolio-caption-background {
 	} 
 
 	span, p, h4 {
+		font-size: .75em !important;
+	}
+
+	header h4 {
+		margin: 8px 0px 6px 0px;
 		font-size: .75em !important;
 	}
 
