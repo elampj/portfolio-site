@@ -5,8 +5,9 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 	<title>Peter Elam's Portfolio</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="styles/reset.css" media="screen" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans: 200,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="styles/style.css" media="screen" />
 	<script src="scripts/Chart.js"></script>
 	<script src="scripts/jquery-1.11.1.min.js"></script>
@@ -15,23 +16,45 @@
 
 <body>
 	<header>
-		<div class="header-holder">
-			<div class="banner-video">
-				<div class="videoWrapper">
-					<iframe width="50%" src="//www.youtube.com/embed/KMVd3y2nEII?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen src-storage="//www.youtube.com/embed/KMVd3y2nEII?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1">
-					</iframe>
-				</div>
-			</div>
-			<div class="title-holder">
-				<h1>Peter Elam</h1>
-				<p>Strategy • Design • Technology</p>  
-				<h4>&#101;&#108;&#097;&#109;&#112;&#106;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</h4>
-			</div>
+		<div class="title-holder">
+			<h1>Peter Elam</h1>
+			<h5>Strategy • Design • Technology</h5>  
+			<h4>peter.elam@diamondtree.org</h4>
 		</div>
 	</header>
 
 	<section id="about-me">
-		<h2>About Me</h2>
+		
+		<h2>Ventures</h2>
+		<div class="about-item">
+			<div class="about-holder">
+				<div class="logo-container">
+					<a class="no-dec" href="http://diamondtree.org" target="_blank">
+					<img class="venture-logo" src="images/logo2.png" alt="Diamond Tree Logo"/>
+					</a>
+				</div>
+				<a class="no-dec" href="http://diamondtree.org" target="_blank">
+					<h3>Diamond Tree</h3>
+				</a>
+				<p>I am a Co-founder of <a href="http://diamondtree.org" target="_blank">Diamond Tree</a>, a company which provides strategy, leadership, and technology consulting to nonprofits.</p>
+			</div>
+		</div>
+
+		<div class="about-item">
+			<div class="about-holder">
+				<div class="logo-container">
+					<a class="no-dec" href="http://notribe.org" target="_blank">
+						<img class="venture-logo" src="images/notribe.png" alt="No Tribe Logo"/>
+					</a>
+				</div>
+				<a class="no-dec" href="http://notribe.org" target="_blank">
+					<h3>No Tribe Podcast</h3>
+				</a>
+				<p>I host a podcast called <a href="http://notribe.org" target="_blank">No Tribe</a> on which I have conversations with people that have perspectives different from my own.</p>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<h2>Skills</h2>
 		<div class="about-item">
 			<div class="about-holder">
 				<div class="icon-container">
@@ -71,26 +94,11 @@
 		</div>
 		<!-- <div class="color-divider"></div> -->
 
-		<div id="chart-div">
-			<div class="chart-holder1">
-				<canvas id="chart-1" height="300"></canvas>
-			</div>
-			<div class="chart-holder2">
-				<canvas id="chart-2" height="300"></canvas>
-			</div>
-			<div class="chart-holder3">
-				<canvas id="chart-3" height="300px"></canvas>
-			</div>
-		<!-- 	<div class="chart-holder2">
-				<canvas id="chart-4" height="300px"></canvas>
-			</div>  -->
-			
-		</div>
 		<div class="clearfix"></div>
 	</section>
 
 	<section id="my-work">
-		<h2>Work Samples</h2>
+		<h2>Projects</h2>
 		<!-- <div class="color-divider"></div> -->
 	
 		
@@ -186,7 +194,7 @@
 			<div class="portfolio-caption-background item1">
 				<div class="portfolio-item-text">
 					<h3>Training Website for College Instructors</h3>
-					<p>Critical Thinking in the College Classroom was developed to help UT Austin instructors integrate critical thinking instruction into their courses.</p>
+					<p>Critical Thinking in the College Classroom was developed to help UT Austin instructors integrate critical thinking instruction into their courses. <a id="crit-think-link" href="http://www.txprofdev.org/apps/ct/index.html#Start" target="_blank">Go to site</a></p>
 				</div>
 				<div class="play-holder-dark">
 					<img class="dark-btn" src="images/black_play_btn.svg" alt="black play button"/>
@@ -412,87 +420,6 @@
 		});
 	</script>
 
-	<script>
-		var barData = {
-    		labels: ["UI/UX", "Web Dev", "Learning Design", "Teaching", "Project Management", "Multimedia", "Team Building", "UI/UX", "Web Dev", "Learning Design", "Teaching", "Project Management", "Multimedia", "Team Building"],
-    		datasets: [
-		        {
-		            label: "Proficiencies",
-		            fillColor: "rgba(220,220,220,0.5)",
-		            strokeColor: "rgba(220,220,220,0.8)",
-		            highlightFill: "rgba(220,220,220,0.75)",
-		            highlightStroke: "rgba(220,220,220,1)",
-		            data: [65, 59, 80, 81, 56, 55, 40, 65, 59, 80, 81, 56, 55, 40]
-		        }
-		    ]
-		};
-
-
-		var radarData = {
-    		labels: ["UI/UX", "Web Dev", "Multimedia", "Design", "Management", "Teaching", "Mentoring"],
-    		datasets: [
-	        {
-	            label: "My First dataset",
-	            fillColor: "rgba(220,220,220,0.2)",
-	            strokeColor: "rgba(220,220,220,1)",
-	            pointColor: "rgba(220,220,220,1)",
-	            pointStrokeColor: "#fff",
-	            pointHighlightFill: "#fff",
-	            pointHighlightStroke: "rgba(220,220,220,1)",
-	            data: [65, 59, 90, 81, 56, 55, 40]
-	        }
-    		]
-		};
-
-		var doughnutData = [
-		{
-		value: 300,
-		// color:"#F7464A",
-		color:"#277E54",
-		highlight: "#FF5A5E",
-		label: "Red"
-		},
-		{
-		value: 50,
-		// color: "#46BFBD",
-		color:"#4D8848",
-		highlight: "#5AD3D1",
-		label: "Green"
-		},
-		{
-		value: 100,
-		// color: "#FDB45C",
-		color:"#7F8F2C",
-		highlight: "#FFC870",
-		label: "Yellow"
-		},
-		{
-		value: 40,
-		// color: "#949FB1",
-		color:"#B7A424",
-		highlight: "#A8B3C5",
-		label: "Grey"
-		},
-		{
-		value: 120,
-		// color: "#4D5360",
-		color:"#E4C419",
-		highlight: "#616774",
-		label: "Dark Grey"
-		}
-		];
-		window.onload = function(){
-		var ctx = document.getElementById("chart-1").getContext("2d");
-		var ctx2 = document.getElementById("chart-2").getContext("2d");
-		var ctx3 = document.getElementById("chart-3").getContext("2d");
-		// var ctx4 = document.getElementById("chart-4").getContext("2d");
-		window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true, animationSteps: 20, animationEasing: "easeOutQuart"});
-		window.myBarChart = new Chart(ctx2).Bar(barData, {responsive : true, animationSteps: 20});
-		window.myRadar = new Chart(ctx3).Radar(radarData, {responsive : true, pointLabelFontSize : 20});
-		// window.myDoughnut = new Chart(ctx4).Doughnut(doughnutData, {responsive : true});
-		// this is a test;
-		};
-	</script>
 	<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

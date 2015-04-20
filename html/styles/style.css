@@ -16,29 +16,36 @@ rgba(0,0,0,0), rgba(0,0,0,0.2)), url("../images/sprinkles_light.png");*/
 }
 
 header {
-	max-width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: black;
+	/*max-width: 1200px;*/
+	/*margin-left: auto;
+	margin-right: auto;*/
+	width: 100%;
+	background-image: url("../images/banner.jpg");
+	background-size: cover;
+	margin-bottom: 60px;
+}
+
+header h1 {
+	color: white;
+	font-size: 2.0em;
+	line-height: 1.4em;
+	font-weight: 300;
 }
 
 header h4 {
 	margin: 12px 0px 10px 0px;
-	color: #B7DBA7;
+	color: white;
 	font-weight: 300;
-	font-size: 1em;
+	font-size: 1.2em;
 }
 
-.header-holder {
-	/*margin-top: 20px;*/
-	
-	margin-bottom: 1%;
-	height: 0px;
-	padding-bottom: 25%;
-	overflow: hidden;
-	position: relative;
-	background-image: url("../images/mainbanner2.jpg");
-	background-size: cover;
+header h5{
+	display: inline;
+	font-size: 1.4em;
+	line-height: 1.4em;
+	white-space: nowrap;
+	color: #45d5da;
+	font-weight: 300;
 }
 
 h2, h3, h4, span {
@@ -60,6 +67,7 @@ h2 {
 	font-size: 1.5em;
 	font-weight: 400;
 	margin-left: 2%;
+	color: #237580;
 }
 
 h3 {
@@ -78,25 +86,15 @@ h3 {
 }
 
 .title-holder {
-	position: absolute; 
-	left:0; 
-	bottom:0;
-	color: white;
-	text-align: left;
+	text-align: center;
 	/*background-color: black;*/
-	width: 50%;
+	padding: 40px 0px 60px 0px;
 	/*height: 100%;*/
-	padding-bottom: 2%;
-	padding-left: 4%;
+	/*padding-bottom: 2%;
+	padding-left: 4%;*/
+	
 	/*background: rgba(0,0,0,0.7);*/
-	text-shadow: 0px 0px 11px rgba(150, 150, 150, 1);
-}
-
-.title-holder p{
-	display: inline;
-	font-size: 1em;
-	line-height: 1.4em;
-	white-space: nowrap;
+	/*text-shadow: 0px 0px 11px rgba(150, 150, 150, 1);*/
 }
 
 .clearfix:after {
@@ -127,6 +125,14 @@ h3 {
 	/*border: 1px gray solid;*/
 }
 
+#about-me h2 {
+	text-align: center;
+	/*color: #4C8747;*/
+	margin-bottom: 40px;
+	margin-top: 35px;
+	/*display: none;*/
+}
+
 #about-me h3{
 	font-size: 1.2em;
 	/*float: right;*/
@@ -141,6 +147,14 @@ h3 {
 	/*border: 1px red solid;*/
 }
 
+.no-dec {
+	text-decoration: none;
+}
+
+.no-dec:hover {
+	opacity: .7;
+}
+
 #my-work {
 	/*width: 65%;*/
 	width: 100%;
@@ -151,15 +165,10 @@ h3 {
 
 #my-work h2 {
 	text-align: center;
-	color: #4C8747;
+	/*color: #4C8747;*/
 }
 
-#about-me h2 {
-	text-align: center;
-	color: #4C8747;
-	margin-bottom: 40px;
-	display: none;
-}
+
 
 #my-work h3 {
 	color: #333;
@@ -213,9 +222,9 @@ a {
 	text-align: left;
 }
 
-.about-holder:hover .icon-container {
+/*.about-holder:hover .icon-container {
 	background-color: #E5F3E4;
-}
+}*/
 
 .about-holder img{
 /*	width: 7%;
@@ -236,6 +245,20 @@ a {
 	margin-top: 0;
 }
 
+.logo-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	margin-right: 20px;
+}
+
+.venture-logo {
+	width: 100%
+}
+
 .icon-container {
 	position: absolute;
 	top: 0;
@@ -248,12 +271,12 @@ a {
 	/*opacity: .7;*/
 	margin-right: 20px;
 	/*padding: 5%;*/
-	border: 1px solid #e5e5e5;
-	border: 1px solid #ccc;
+/*	border: 1px solid #e5e5e5;
+	border: 1px solid #ccc;*/
     border-radius: 50%;
     /*background-color: #eee;*/
    /* background-color: #5AD3D1;*/
-    background-color: #fff;
+    background-color: #237580;
 }
 
 .icon-container img{
@@ -269,7 +292,10 @@ a {
 }
 
 svg path{
-	fill: #4C8747;
+	/*fill: #4c937d;*/
+/*	fill: #18525e;
+	fill: #237580;*/
+	fill: white;
 }
 
 .portfolio-item-holder {
@@ -455,7 +481,8 @@ div.selected .portfolio-caption-background {
 .videoWrapper {
 	position: relative;
 	/*padding-bottom: 56.25%;*/ /* 16:9 */
-	padding-bottom: 50%;
+	/*padding-bottom: 53.5%;*/ /* What Pete Thinks is Correct */
+	padding-bottom: 53.5%;
 	padding-top: 25px;
 	height: 0;
 	background-color: black;
@@ -538,16 +565,16 @@ div.selected .portfolio-caption-background {
 		font-size: 1em !important;
 	} 
 
-	span, p, h4 {
+	span, p {
 		font-size: .75em !important;
-	}
-
-	header h4 {
-		font-size: 1em !important;
 	}
 
 	.play-holder-dark p{
 		font-size: 1em !important;
+	}
+
+	#crit-think-link {
+		display: none;
 	}
 }
 
@@ -634,11 +661,16 @@ div.selected .portfolio-caption-background {
 
 	h2 {
 		font-size: 1em !important;
-	} 
+		margin-bottom: 5px !important;
+	}
 
-	h2, h3 {
+	h3 {
 		font-size: .9em !important;
 	} 
+
+	h5 {
+		font-size: .9em !important;
+	}
 
 	span, p, h4 {
 		font-size: .75em !important;
@@ -662,7 +694,7 @@ div.selected .portfolio-caption-background {
 		margin: 20px 0px;
 	}
 
-	.icon-container {
+	.icon-container, .logo-container{
 		width: 60px;
 		height: 60px;
 	}
@@ -671,9 +703,12 @@ div.selected .portfolio-caption-background {
     	margin-top: -2px;
 	}
 
+
+
 	.portfolio-item-holder {
 		margin: 5% auto 45px auto;
 		margin-bottom: 10%;
+		margin-top: 30px;
 	}
 
 	.play-holder-dark {
